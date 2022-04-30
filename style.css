@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:focus{
+    box-shadow: 0 1px 10px 2px #b702ff;
+}
+
+input:focus{
+    box-shadow: 0 1px 5px 2px #b702ff;
+}
+
+
+
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background: linear-gradient(#ee0404,#b702ff);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1222d3;
+    padding: 15px;
+    max-width: 450px;
+    border-radius: 15px;
+}
+
+
+h3{
+    color: transparent;
+    margin: 5px;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 1px;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(red,blue);
+    border-radius: 50%;
+    margin: 5px auto;
+    border: 2px solid #fff;
+}
+
+.selectColor{
+    display: flex;
+}
+
+.selectColor div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.selectColor div label{
+    text-align: center;
+    color: #ddd;
+    margin: 5px;
+} 
+
+.color1,.color2{
+    width: 80px;
+    cursor: pointer;
+}
+
+.code{
+    padding: 5px;
+    outline: none;
+    border: 2px solid #b702ff;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+
+
+.info{
+    color: #fff;
+    margin: 5px;
+    display: none;
+    animation: info 2s;
+}
+
+
+button{
+    margin: 10px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    border: transparent;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    color: #fff;
+    background-color: #b702ff;
+}
